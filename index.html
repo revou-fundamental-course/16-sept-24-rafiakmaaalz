@@ -1,97 +1,178 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="id">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Makmur</title>
+    <title>Mini Portofolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
-  </head>
-  <body>
-    <header>
-      <div class="container">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="container-header">
         <div class="header-left">
-          <img class="logo" src="coding-removebg-preview.png">
+            <img class="logo" src="assets/coding-removebg-preview.png" alt="Logo">
         </div>
-        <a href="#" class="menu-icon"><span class="fa fa-bars"></span></a>
-        <div class="header-right">
-          <a href="#" class="login">HOME</a>
-          <a href="#">Our Profile</a>
-          <a href="#">Portofolio</a>
-          <a href="#">Massage Us</a>
-        </div>
-      </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profil">Our Profile</a>
+            <a href="#porto">Portofolio</a>
+            <a href="#message">Message Us</a>
+        </nav>
     </header>
-     <div class="top-wrapper">
-      <div class="container">
-        <h1>FORUM BELAJAR CODING TERPERCAYA.</h1>
-        <h1>MENJADI LEBIH KREATIF DAN INOVATIF BERSAMA CODING MAKMUR.</h1>
-        <p>Coding Makmur adalah platform online untuk belajar coding yang dilatih oleh mentor berbakat.</p>
-        <p>Kami menawarkan pemograman yang lengkap untuk mempermudah anda dalam memulai belajar.</p>
-        <div class="btn-wrapper">
-          <a href="#" class="btn signup">Daftar dengan Email</a>
-          <p>atau</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Daftar dengan Facebook</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Daftar dengan Twitter</a>
-        </div>
-      </div>
-    </div>
-    <div class="lesson-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Cari tau dari mana anda mau memulai!</h2>
-        </div>
-        <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/html.png">
-               <p>HTML & CSS</p>
+
+    <main>
+        <!--HOME-->
+        <section id="home">
+            <header class="text-pembuka">
+                <h1>Hi <span id="user">User</span>, Welcome To my Website</h1>
+            </header>
+            <article>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quam?</p>
+            </article>
+            <div class="banner">
+                <img src="assets/gunung1.jpg" alt="Gambar 1" class="img-slideshow">
+                <img src="assets/gunung2.jpg" alt="Gambar 2" class="img-slideshow">
+                <img src="assets/gunung3.jpg" alt="Gambar 3" class="img-slideshow">
+                <button onclick="plusDivs(-1)" class="button-back"> &lt; </button>
+                <button onclick="plusDivs(1)" class="button-next">&gt;</button>
             </div>
-             <p class="text-contents">Bahasa yang digunakan untuk membuat struktur dan design tampilan situs web Anda.</p>
+        </section>
+
+        <!-- Our Profile Section -->
+        <section id="profil" class="container">
+          <header class="text-pembuka">
+              <h1>Our Profile</h1>
+          </header>
+          <article>
+              <p>Kami adalah tim pengembang yang berfokus pada pembuatan solusi digital yang inovatif. Dengan pengalaman di berbagai bidang teknologi, kami siap membantu Anda mencapai tujuan bisnis Anda.</p>
+              <p>Visi kami adalah memberikan layanan yang berkualitas tinggi dan mendukung perkembangan teknologi untuk masa depan yang lebih baik.</p>
+          </article>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="porto" class="container">
+          <header class="text-pembuka">
+              <h1>Portfolio</h1>
+          </header>
+          <div class="portfolio-items">
+              <div class="portfolio-item">
+                  <img src="assets/gunung4.jpeg" alt="Gunung Andong">
+                  <h3>Gunung Andong</h3>
+                  <p>Deskripsi singkat mengenai proyek pertama. Ini adalah proyek yang menunjukkan kemampuan kami dalam mengembangkan aplikasi web.</p>
+              </div>
+              <div class="portfolio-item">
+                  <img src="assets/gunung5.jpeg" alt="Gunung Merbabu">
+                  <h3>Gunung Merbabu</h3>
+                  <p>Deskripsi singkat mengenai proyek kedua. Proyek ini merupakan aplikasi mobile yang membantu pengguna dalam berbagai aktivitas.</p>
+              </div>
+              <div class="portfolio-item">
+                  <img src="assets/gunung6.jpeg" alt="Gunung Prau">
+                  <h3>Gunung Prau</h3>
+                  <p>Deskripsi singkat mengenai proyek ketiga. Ini adalah solusi yang dirancang khusus untuk memenuhi kebutuhan klien kami.</p>
+              </div>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>jQuery</p>
+        </section>
+
+        <!--Message Us-->
+        <section id="message" class="container">
+          <header class="text-pembuka">
+            <h1>Message Us</h1>
+            <div class="message">
+              <div class="form">
+                <div>
+                  <div class="form-label">
+                    <label for="nama">Nama</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="nama"
+                      placeholder="Nama"
+                      class="input-form"
+                    />
+                  </div>
+                  <div class="form-label">
+                    <label for="tanggal-lahir">Tanggal Lahir</label>
+                    <input
+                      type="date"
+                      name="tanggal-lahir"
+                      id="tanggal-lahir"
+                      class="input-form"
+                    />
+                  </div>
+                  <div class="form-label">
+                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <input
+                      type="radio"
+                      id="male"
+                      name="gender"
+                      value="Laki-Laki"
+                      checked
+                    />
+                    <label for="male" class="left-10">Laki-Laki</label>
+
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="Perempuan"
+                    />
+                    <label for="female" class="left-10">Perempuan</label>
+                  </div>
+
+                  <div class="form-label">
+                    <label for="pesan">Pesan</label>
+                    <textarea
+                      name="pesan"
+                      id="pesan"
+                      cols="60"
+                      rows="8"
+                      class="input-form"
+                      placeholder="Tulis pesan Anda di sini..."
+                    ></textarea>
+                  </div>
+
+                  <button class="btn" onclick="result()">Submit</button>
+                </div>
+              </div>
+              <div class="answer">
+                <div class="box">
+                  <h2>Response</h2>
+                  <div class="answer-flex">
+                    <p style="font-weight: bold">Current Time:</p>
+                    <span id="time"></span>
+                  </div>
+
+                  <div class="answer-flex">
+                    <p style="font-weight: bold">Nama:</p>
+                    <span id="result-nama"></span>
+                  </div>
+                  <div class="answer-flex">
+                    <p style="font-weight: bold">Tanggal Lahir:</p>
+                    <span id="result-tgl-lhr"></span>
+                  </div>
+                  <div class="answer-flex">
+                    <p style="font-weight: bold">Jenis Kelamin:</p>
+                    <span id="result-gender"></span>
+                  </div>
+                  <div class="answer-flex">
+                    <p style="font-weight: bold">Pesan:</p>
+                    <span id="result-pesan"></span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="text-contents">Library JavaScript yang cepat, kaya akan fitur, dan mudah digunakan yang menangani animasi dan permintaan Ajax.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/ruby.png">
-              <p>Ruby</p>
-            </div>
-            <p class="text-contents">Bahasa dinamis, serba guna yang sederhana dan produktif. Ruby sering digunakan untuk membuat aplikasi web yang responsive.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <img src="https://prog-8.com/images/html/advanced/php.png">
-              <p>PHP</p>
-            </div>
-            <p class="text-contents">Bahasa skrip open source yang dapat disematkan ke dalam HTML, dan cocok untuk pengembangan web.</p>
-          </div>
-          <div class="clear"></div>
-          <br/>
-          <br/>
-          <span class="btn message">Daftar Pelajaran</span>
-        </div>
-      </div>
-    </div>
-    <div class="message-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>Apakah anda siap untuk menjadi programer yang handal?</h2>
-          <h3>Ayo belajar coding, ayo belajar menjadi lebih kreatif!</h3>
-        </div>
-        <span class="btn message">Mulai Belajar</span>
-      </div>
-    </div>
+          </header>
+        </section>
+
+    </main>
+
     <footer>
-      <div class="container">
-        Copyright &copy; Coding Makmur
-        <p>Learn to code, learn to be creative.</p>
-      </div>
+        <div class="container">
+            Copyright © Rafi Akmal Maulana
+            <p>Learn to code, learn to be creative.</p>
+        </div>
     </footer>
-  </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
